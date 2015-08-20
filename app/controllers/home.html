@@ -1,0 +1,13 @@
+<div class="center-content">
+    <div class="center-row">
+        <input class="form-control big-input" autofocus="true" type="text" ng-model="query" placeholder="Search on Youtube" ng-keypress="keypressFunction($event)">
+    </div>
+    <div class="center-row">
+        <button class="btn btn-success full-width big-input" ng-click="search()">Download</button>
+    </div>
+    <div class="center-row error" ng-if="googleProblem">
+        Problem with Google services, unable to search videos.
+    </div>
+</div>
+
+
